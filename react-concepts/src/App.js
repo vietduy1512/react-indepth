@@ -1,10 +1,12 @@
 import React from 'react';
-import HelloWorld from './components/rendering-elements/hello-world';
+import HelloWorldComponent from './components/hello-world/hello-world';
+import IntroducingJSX from './components/introducing-JSX/introducing-JSX';
 
 function App() {
   return (
     <div>
-      <HelloWorld />
+      <HelloWorldComponent />
+      <IntroducingJSX />
     </div>
   );
 }
