@@ -9,8 +9,8 @@ function RenderingElements() {
 
   return (
     <div id="rendering-elements">
-      <span>Time: </span>
-      <span>{new Date().toLocaleTimeString()}</span>  {/* React only updates What’s Changed */}
+      <h2>Rendering Elements</h2>
+      <span>Time: {new Date().toLocaleTimeString()}</span>  {/* React only updates What’s Changed */}
     </div>
   );
 }

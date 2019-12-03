@@ -1,11 +1,12 @@
 import React from 'react';
 
 const name = "Duy";
-const element = <h2>This is {name}</h2>;  // {name} is Embedding Expressions in JSX
+const element = <div>This is {name}</div>;  // {name} is Embedding Expressions in JSX
 
 function IntroducingJSX() {
   return (
     <div>
+      <h2>Introducing JSX</h2>
       {element}
     </div>
   );
