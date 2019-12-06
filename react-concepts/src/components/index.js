@@ -5,6 +5,7 @@ import RenderingElements from './3.rendering-elements';
 import ComponentsAndProps from './4.components-and-props';
 import StateAndLifecycle from './5.state-and-lifecycle';
 import HandlingEvents from './6.handling-events';
+import ConditionalRendering from './7.conditional-rendering';
 import { UnableToUpdateComponents, AbleToUpdateComponents } from './examples/update-components';
 
 const components = [
@@ -37,6 +38,11 @@ const components = [
         title: "6. Handling Events",
         id: "v-pills-handling-events",
         content: <HandlingEvents />
+    },
+    {
+        title: "7. Conditional Rendering",
+        id: "v-pills-conditional-rendering",
+        content: <ConditionalRendering />
     },
     {
         title: "Examples",
