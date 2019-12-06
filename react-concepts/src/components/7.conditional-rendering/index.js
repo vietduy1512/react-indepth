@@ -44,7 +44,8 @@ class ConditionalRendering extends React.Component {
   
       return (
         <div>
-          {button}
+            <h2>Conditional Rendering</h2>
+            {button}
         </div>
       );
     }
