@@ -15,6 +15,11 @@ function App() {
       <ComponentsAndProps />
       <StateAndLifecycle />
 
+      <div>
+        <h3>Examples</h3>
+        <UnableToUpdateComponents />
+        <AbleToUpdateComponents />
+      </div>
     </div>
   );
 }
