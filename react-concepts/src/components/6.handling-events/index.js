@@ -5,8 +5,6 @@ import React from 'react';
 //    + Using class fields to bind callbacks
 //    + Using arrow function (*)
 
-// 2. 
-
 class HandlingEvents extends React.Component {
   constructor(props) {
     super(props);
