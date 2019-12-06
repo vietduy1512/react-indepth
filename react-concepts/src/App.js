@@ -4,6 +4,7 @@ import IntroducingJSX from './components/2.introducing-JSX';
 import RenderingElements from './components/3.rendering-elements';
 import ComponentsAndProps from './components/4.components-and-props';
 import StateAndLifecycle from './components/5.state-and-lifecycle';
+import HandlingEvents from './components/6.handling-events';
 import { UnableToUpdateComponents, AbleToUpdateComponents } from './components/examples/update-components';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <RenderingElements />
       <ComponentsAndProps />
       <StateAndLifecycle />
+      <HandlingEvents />
 
       <div>
         <h3>Examples</h3>
