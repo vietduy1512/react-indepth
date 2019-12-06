@@ -3,6 +3,8 @@ import HelloWorldComponent from './components/hello-world/index';
 import IntroducingJSX from './components/introducing-JSX';
 import RenderingElements from './components/rendering-elements';
 import ComponentsAndProps from './components/components-and-props';
+import StateAndLifecycle from './components/state-and-lifecycle';
+import { UnableToUpdateComponents, AbleToUpdateComponents } from './components/examples/update-components';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <IntroducingJSX />
       <RenderingElements />
       <ComponentsAndProps />
+      <StateAndLifecycle />
+
     </div>
   );
 }
