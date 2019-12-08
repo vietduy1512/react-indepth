@@ -1,6 +1,11 @@
 import React from "react";
 
-// Extension: https://jaredpalmer.com/formik
+// 1. Extension: https://jaredpalmer.com/formik
+
+// 2. Controlled component: Specifying the value prop on a controlled component prevents the user from
+//      changing the input unless you desire so. (example: <input value="this.state.name" />)
+
+// 3. Controlled Input Null Value: the input is editable if "value" set to undefined or null. (example: <input value={null} />)
 
 class BasicForm extends React.Component {
     constructor(props) {
