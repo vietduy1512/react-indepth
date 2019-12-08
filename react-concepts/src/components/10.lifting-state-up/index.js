@@ -1,5 +1,6 @@
 import React from "react";
 import Calculator from "./calculator"
+import Template from "./basic";
 
 // 1. Lifting state up: 
 //      + Often, several components need to reflect the same changing data (to be in sync).
@@ -9,7 +10,10 @@ import Calculator from "./calculator"
 
 function LiftingStateUp() {
     return (
-        <Calculator />
+        <>
+            <Calculator />
+            <Template />
+        </>
     );
 }
 
