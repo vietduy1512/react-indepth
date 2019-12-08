@@ -9,6 +9,7 @@ import ConditionalRendering from './7.conditional-rendering';
 import { UnableToUpdateComponents, AbleToUpdateComponents } from './examples/update-components';
 import ListsAndKeys from './8.lists-and-keys';
 import Form from './9.forms';
+import LiftingStateUp from './10.lifting-state-up';
 
 const components = [
     {
@@ -52,10 +53,15 @@ const components = [
         content: <ListsAndKeys />
     },
     {
-        isSelected: true,
         title: "9. Forms",
         id: "v-pills-forms",
         content: <Form />
+    },
+    {
+        isSelected: true,
+        title: "10. Lifting State Up",
+        id: "v-pills-lifting-state-up",
+        content: <LiftingStateUp />
     },
     {
         title: "Examples",
