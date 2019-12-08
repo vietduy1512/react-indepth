@@ -8,6 +8,7 @@ import HandlingEvents from './6.handling-events';
 import ConditionalRendering from './7.conditional-rendering';
 import { UnableToUpdateComponents, AbleToUpdateComponents } from './examples/update-components';
 import ListsAndKeys from './8.lists-and-keys';
+import Form from './9.forms';
 
 const components = [
     {
@@ -49,6 +50,12 @@ const components = [
         title: "8. Lists And Keys",
         id: "v-pills-lists-and-keys",
         content: <ListsAndKeys />
+    },
+    {
+        isSelected: true,
+        title: "9. Forms",
+        id: "v-pills-forms",
+        content: <Form />
     },
     {
         title: "Examples",
