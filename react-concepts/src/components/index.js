@@ -10,6 +10,7 @@ import { UnableToUpdateComponents, AbleToUpdateComponents } from './examples/upd
 import ListsAndKeys from './8.lists-and-keys';
 import Form from './9.forms';
 import LiftingStateUp from './10.lifting-state-up';
+import Composition from './11.composition-vs-inheritance';
 
 const components = [
     {
@@ -28,12 +29,12 @@ const components = [
         content: <RenderingElements />
     },
     {
-        title: "4. Components And Props",
+        title: "4. Components and Props",
         id: "v-pills-components-and-props",
         content: <ComponentsAndProps />
     },
     {
-        title: "5. State And Lifecycle",
+        title: "5. State and Lifecycle",
         id: "v-pills-state-and-lifecycle",
         content: <StateAndLifecycle />
     },
@@ -48,7 +49,7 @@ const components = [
         content: <ConditionalRendering />
     },
     {
-        title: "8. Lists And Keys",
+        title: "8. Lists and Keys",
         id: "v-pills-lists-and-keys",
         content: <ListsAndKeys />
     },
@@ -58,10 +59,15 @@ const components = [
         content: <Form />
     },
     {
-        isSelected: true,
         title: "10. Lifting State Up",
         id: "v-pills-lifting-state-up",
         content: <LiftingStateUp />
+    },
+    {
+        isSelected: true,
+        title: "11. Composition vs Inheritance",
+        id: "v-pills-composition-vs-Inheritance",
+        content: <Composition />
     },
     {
         title: "Examples",
