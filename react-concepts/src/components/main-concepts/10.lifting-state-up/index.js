@@ -12,6 +12,7 @@ function LiftingStateUp() {
     return (
         <>
             <Calculator />
+            <hr/>
             <Template />
         </>
     );
