@@ -9,19 +9,19 @@ import {
 function App() {
   return (
     <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/main-concepts">Main Concepts</Link>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <Link class="navbar-brand" to="/">React</Link>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <Link class="nav-item nav-link active" to="/">Home</Link>
+            <Link class="nav-item nav-link" to="/main-concepts">Main Concepts</Link>
+          </div>
+        </div>
       </nav>
 
-      {/* A <Switch> looks through its children <Route>s and
-          renders the first one that matches the current URL. */}
       <Switch>
         <Route exact path="/">
           <div>Home page</div>
