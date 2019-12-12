@@ -11,6 +11,7 @@ import ListsAndKeys from './8.lists-and-keys';
 import Form from './9.forms';
 import LiftingStateUp from './10.lifting-state-up';
 import Composition from './11.composition-vs-inheritance';
+import ThinkingInReact from './12.thinking-in-react';
 
 const components = [
     {
@@ -64,10 +65,15 @@ const components = [
         content: <LiftingStateUp />
     },
     {
-        isSelected: true,
         title: "11. Composition vs Inheritance",
         id: "v-pills-composition-vs-Inheritance",
         content: <Composition />
+    },
+    {
+        isSelected: true,
+        title: "12. Thinking in React",
+        id: "v-pills-thinking-in-react",
+        content: <ThinkingInReact />
     },
     {
         title: "Examples",
