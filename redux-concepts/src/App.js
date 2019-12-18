@@ -6,6 +6,8 @@ import PostForm from "./components/Postform";
 function App() {
   return (
     <div>
+      <PostForm></PostForm>
+      <hr />
       <Posts></Posts>
     </div>
   );
