@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { createPost } from "../actions/postAction";
+import { basicCreatePost, thunkCreatePost } from "../actions/postAction";
+import { NEW_POST } from "../actions/types";
 
 class PostForm extends Component {
   constructor(props) {
@@ -27,7 +28,10 @@ class PostForm extends Component {
       body: this.state.body
     };
 
-    this.props.createPost(post);
+    //this.props.basicCreatePost(post);
+    //this.props.thunkCreatePost(post);
+    //this.props.dispatchCreatePost(post);
+    this.props.dispatchCreatePostUsingActionCreator(post);
   }
 
   render() {
@@ -67,4 +71,23 @@ PostForm.propTypes = {
   createPost: PropTypes.func.isRequired
 };
 
-export default connect(null, { createPost })(PostForm);
+// 1st way to dispatch action - using basic redux
+//export default connect(null, { basicCreatePost })(PostForm);
+
+// 2nd way to dispatch action - using react-thunk
+//export default connect(null, { thunkCreatePost })(PostForm);
+
+// 3rd way to dispatch action
+const mapDispatchToProps = dispatch => {
+  return {
+    dispatchCreatePost: post =>
+      dispatch({
+        type: NEW_POST,
+        payload: post
+      }),
+    dispatchCreatePostUsingActionCreator: post =>
+      dispatch(basicCreatePost(post))
+  };
+};
+
+export default connect(null, mapDispatchToProps)(PostForm);
