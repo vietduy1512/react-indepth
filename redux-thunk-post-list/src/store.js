@@ -4,7 +4,14 @@ import rootReducer from "./reducers";
 
 const initialState = {};
 
-const middleware = [thunk];
+const logger = store => next => action => {
+  console.log('[Middleware] Dispatching', action);
+  const result = next(action);
+  console.log('[Middleware] Current state', store.getState());
+  return result;
+}
+
+const middleware = [logger, thunk];
 
 const store = createStore(
   rootReducer,
