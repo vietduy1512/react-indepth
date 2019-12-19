@@ -1,5 +1,5 @@
 {
-  "name": "redux-concepts",
+  "name": "redux-thunk-post-list",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
