@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
@@ -28,10 +29,10 @@ class PostForm extends Component {
       body: this.state.body
     };
 
-    //this.props.basicCreatePost(post);
+    this.props.basicCreatePost(post);
     //this.props.thunkCreatePost(post);
     //this.props.dispatchCreatePost(post);
-    this.props.dispatchCreatePostUsingActionCreator(post);
+    //this.props.dispatchCreatePostUsingActionCreator(post);
   }
 
   render() {
@@ -72,22 +73,22 @@ PostForm.propTypes = {
 };
 
 // 1st way to dispatch action - using basic redux
-//export default connect(null, { basicCreatePost })(PostForm);
+export default connect(null, { basicCreatePost })(PostForm);
 
 // 2nd way to dispatch action - using react-thunk
 //export default connect(null, { thunkCreatePost })(PostForm);
 
 // 3rd way to dispatch action
-const mapDispatchToProps = dispatch => {
-  return {
-    dispatchCreatePost: post =>
-      dispatch({
-        type: NEW_POST,
-        payload: post
-      }),
-    dispatchCreatePostUsingActionCreator: post =>
-      dispatch(basicCreatePost(post))
-  };
-};
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     dispatchCreatePost: post =>
+//       dispatch({
+//         type: NEW_POST,
+//         payload: post
+//       }),
+//     dispatchCreatePostUsingActionCreator: post =>
+//       dispatch(basicCreatePost(post))
+//   };
+// };
 
-export default connect(null, mapDispatchToProps)(PostForm);
+// export default connect(null, mapDispatchToProps)(PostForm);
