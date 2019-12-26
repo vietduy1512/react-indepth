@@ -5,7 +5,7 @@ function ThinkingInReact() {
   return (
     <>
       <h2>Thinking in React</h2>
-      <a href={url} class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Read more</a>
+      <a href={url} className="btn btn-primary btn-lg active" role="button" aria-pressed="true">Read more</a>
     </>
   )
 }

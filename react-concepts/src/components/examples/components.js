@@ -4,12 +4,11 @@ import { UnableToUpdateComponents, AbleToUpdateComponents } from './update-compo
 
 const components = [
     {
-        isSelected: true,
-        title: "Examples",
-        id: "v-pills-examples",
+        title: "Update Component",
+        id: "v-pills-update-component",
         content: (
         <div>
-            <h3>Examples</h3>
+            <h3>Update Component</h3>
             <UnableToUpdateComponents />
             <AbleToUpdateComponents />
         </div>

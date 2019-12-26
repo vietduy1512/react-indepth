@@ -10,16 +10,16 @@ import Examples from './components/examples';
 function App() {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <Link class="navbar-brand" to="/">React</Link>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <Link className="navbar-brand" to="/">React</Link>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <Link class="nav-item nav-link active" to="/">Home</Link>
-            <Link class="nav-item nav-link" to="/main-concepts">Main Concepts</Link>
-            <Link class="nav-item nav-link" to="/examples">Examples</Link>
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav">
+            <Link className="nav-item nav-link active" to="/">Home</Link>
+            <Link className="nav-item nav-link" to="/main-concepts">Main Concepts</Link>
+            <Link className="nav-item nav-link" to="/examples">Examples</Link>
           </div>
         </div>
       </nav>
