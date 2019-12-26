@@ -1,10 +1,11 @@
 import React from 'react';
-import MainConcepts from './components/main-concepts'
 import {
   Switch,
   Route,
   Link
 } from "react-router-dom";
+import MainConcepts from './components/main-concepts'
+import Examples from './components/examples';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <div class="navbar-nav">
             <Link class="nav-item nav-link active" to="/">Home</Link>
             <Link class="nav-item nav-link" to="/main-concepts">Main Concepts</Link>
+            <Link class="nav-item nav-link" to="/examples">Examples</Link>
           </div>
         </div>
       </nav>
@@ -28,6 +30,9 @@ function App() {
         </Route>
         <Route path="/main-concepts">
           <MainConcepts />
+        </Route>
+        <Route path="/examples">
+          <Examples />
         </Route>
       </Switch>
     </div>

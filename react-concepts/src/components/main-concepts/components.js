@@ -6,7 +6,6 @@ import ComponentsAndProps from './4.components-and-props';
 import StateAndLifecycle from './5.state-and-lifecycle';
 import HandlingEvents from './6.handling-events';
 import ConditionalRendering from './7.conditional-rendering';
-import { UnableToUpdateComponents, AbleToUpdateComponents } from './examples/update-components';
 import ListsAndKeys from './8.lists-and-keys';
 import Form from './9.forms';
 import LiftingStateUp from './10.lifting-state-up';
@@ -74,17 +73,6 @@ const components = [
         title: "12. Thinking in React",
         id: "v-pills-thinking-in-react",
         content: <ThinkingInReact />
-    },
-    {
-        title: "Examples",
-        id: "v-pills-examples",
-        content: (
-        <div>
-            <h3>Examples</h3>
-            <UnableToUpdateComponents />
-            <AbleToUpdateComponents />
-        </div>
-        )
     }
 ];
 
