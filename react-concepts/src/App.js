@@ -21,7 +21,7 @@ function App() {
             <Link className="nav-item nav-link active" to="/">Home</Link>
             <Link className="nav-item nav-link" to="/main-concepts">Main Concepts</Link>
             <Link className="nav-item nav-link" to="/examples">Examples</Link>
-            <Link className="nav-item nav-link" to="/styles-and-assets">Styles And Assets</Link>
+            <Link className="nav-item nav-link" to="/styles-and-assets">Styles and Assets</Link>
           </div>
         </div>
       </nav>

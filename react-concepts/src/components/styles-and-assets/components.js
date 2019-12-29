@@ -4,8 +4,8 @@ import ColorHeading from './1.adding-stylesheets';
 const components = [
     {
         isSelected: true,
-        title: "Color Heading",
-        id: "v-pills-color-heading",
+        title: "1. Adding Stylesheets",
+        id: "v-pills-adding-stylesheets",
         content: <ColorHeading/>
     }
 ];
