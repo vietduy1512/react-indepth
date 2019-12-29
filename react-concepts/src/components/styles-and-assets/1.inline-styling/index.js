@@ -13,7 +13,7 @@ class InlineStyling extends Component {
       <>
         <h3 style={{color: "red"}}>Basic</h3>
         <h3 style={{backgroundColor: "lightblue"}}>camelCased Property Names</h3> {/* in css: background-color */}
-        <h3 style={{mystyle}}>JavaScript Object</h3>
+        <h3 style={mystyle}>JavaScript Object</h3>
       </>
     );
   }
