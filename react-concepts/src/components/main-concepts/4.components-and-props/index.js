@@ -7,10 +7,12 @@ import ClassComponent from './class-component'
 // 3. Props are Read-Only:      Never modify its own props/input parameters (follow functional programming principles)
 
 function ComponentsAndProps() {
+  const name = "Duy";
+  
   return (
     <div>
       <h2>Components And Props</h2>
-      <FunctionComponent name="Duy" />  {/*  */}
+      <FunctionComponent name={name} />  {/* Using variables need {} */}
       <ClassComponent name="Duy" />
     </div>
   );
