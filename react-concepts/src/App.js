@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import MainConcepts from './components/main-concepts'
 import Examples from './components/examples';
+import StylesAndAssets from './components/styles-and-assets';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Link className="nav-item nav-link active" to="/">Home</Link>
             <Link className="nav-item nav-link" to="/main-concepts">Main Concepts</Link>
             <Link className="nav-item nav-link" to="/examples">Examples</Link>
+            <Link className="nav-item nav-link" to="/styles-and-assets">Styles And Assets</Link>
           </div>
         </div>
       </nav>
@@ -33,6 +35,9 @@ function App() {
         </Route>
         <Route path="/examples">
           <Examples />
+        </Route>
+        <Route path="/styles-and-assets">
+          <StylesAndAssets />
         </Route>
       </Switch>
     </div>
